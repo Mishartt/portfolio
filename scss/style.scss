@@ -63,7 +63,7 @@ header{
 
             .header__list{
               
-                width: 100%;
+                width: 80%;
                 height: 100%;
                 display: flex;
                 justify-content: space-around;
@@ -87,7 +87,7 @@ header{
 
 
 .home{
-    
+    margin-top: 5vh;
     width: 100%;
     height: 90vh;
     background-color: #212121;
@@ -99,6 +99,8 @@ header{
     .hero-wrapper{
         display: flex;
         // border: teal solid;
+        justify-content: center;
+        align-items: center;
         width: 1400px;
         height: 730px;
 
@@ -148,6 +150,7 @@ header{
                     color: black;
 
                 }
+                box-shadow: 0 0.6rem 1.4rem rgb(0 0 0 / 25%);
 
             }
 
@@ -160,7 +163,10 @@ header{
 
         .pht{
             width: 50%;
+            // height: 100%;
+            // display: flex;
             img{
+                margin: 0 auto;
                 width: 90%;
             }
         }
@@ -191,6 +197,63 @@ main{
         
     }
 
+    .about__me{
+        width: 100%;
+        height: 45vh;
+
+
+        .inform__about__me{
+            width: 100%;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            color: white;
+            font-size: 1.4em;
+        }
+    }
+
+    .skills{
+        width: 100%;
+        height: 35vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        
+            .skills__wrapper{
+                width: 1200px;
+                display: flex;
+                justify-content: space-around;
+                padding-top: 20px;
+                padding: 50px;
+                flex-wrap: wrap;
+
+
+                .skill{
+                    box-shadow: 0 1.6rem 2.4rem rgb(0 0 0 / 25%);
+                    // background-color: #2b2b2b;;
+                    margin: 21px;
+                    width: 300px;
+                    height: 52px;
+                    border: #64ffda solid 1px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 5px;
+                    color: #64ffda;
+                    transition: 0.3s;
+                    font-size: 1.5em;
+                }
+
+                .skill:hover{
+                    background-color: #0fb;
+                    color: black;
+                    transition: 0.3s;
+                }
+            }
+        
+    }
+
 
 
 
@@ -208,8 +271,8 @@ main{
 
         .works__wrapper{
             width: 1400px;
-            min-height: 70%;
-            border: solid teal;
+            min-height: 87%;
+            // border: solid teal;
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
@@ -217,16 +280,64 @@ main{
             .item1{
                 margin-left: 5%;
                 margin-top: 5%;
-                border: tomato solid;
+                // border: tomato solid;
                 width: 400px;
-                height: 400px;
+                height: 300px;
+                overflow: hidden;
+                box-shadow: 0 1.6rem 2.4rem rgb(0 0 0 / 25%);
+            }
 
-                img{
-                    width: 100%;
+            .description{
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                z-index: 10;
+               transition: 0.7s;
+               margin-top: -300px;
+               opacity: 0.7;
+               display: flex;
+                align-items: center;
+                justify-content: center;
+               flex-direction: column;
+                h1{
+                    color: white;
+                    margin-bottom: 15%;
                 }
+
             }
         }
     }
+    #i1{
+        background-image: url(/assets/img/pr/Screenshot_3.png);
+        background-size: 105%;
+    }
+    #i2{
+        background-image: url(/assets/img/pr/timer.png);
+        background-size: 105%;
+    }
+
+    #i3{
+        background-image: url(/assets/img/pr/todo.png);
+        background-size: 105%;
+    }
+
+    #i4{
+        background-image: url('/assets/img/pr/PngItem_5132686\ \(1\).png');
+        background-size: 81%;
+        background-repeat: no-repeat;
+    }
+
+    .item1:hover{
+        .description{
+            transition: 1s;
+            display: flex;
+           margin-top:0;
+            transition: 0.7s;
+            // display: none;
+        }
+    }
+
+
 
 
 
@@ -391,6 +502,7 @@ main{
                 transition: 0.5s;
                 margin-left: -50%;
                 margin-top: 5%;
+                box-shadow: 0 0.6rem 1.4rem rgb(0 0 0 / 25%);
             }
 
             .sbm__btn:hover{
@@ -411,4 +523,61 @@ footer{
     justify-content: space-around;
     color: white;
     
+}
+
+
+
+@media (max-width:1500px){
+
+    .container{
+        width: 85%;
+    }
+
+    .hero-wrapper{
+        width: 85%;
+    }
+
+    .works__wrapper{
+        width: 85%;
+    }
+
+    .contact__wrapper{
+        width: 85%;
+    }
+
+    .skills__wrapper{
+        width: 85%;
+    }
+
+    // .item1{
+    //     width: 85%;
+    // }
+
+
+
+}
+
+@media (max-width:992px){
+
+    .hero-wrapper{
+        width: 80%;
+    }
+    
+    .container{
+        width: 500px;
+    }
+
+    .hero-wrapper{
+        width: 970px;
+    }
+
+    .works__wrapper{
+        width: 970px;
+    }
+
+    .contact__wrapper{
+        width: 970px;
+    }
+
+
 }

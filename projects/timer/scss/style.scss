@@ -9,7 +9,7 @@ body{
 
 .container{
     width: 100%;
-    height: 700px;
+    height: 100vh;
     background: linear-gradient(rgb(37, 37, 37),rgb(29,29,29));
     display: flex;
     flex-direction: row-reverse;
@@ -106,139 +106,11 @@ body{
 }
 
 
-@media screen and (min-width:1500px){
-   .container{
-       height: 1400px;
-       width: 100%;
-       
-   }
-
-   .menu-bar h2{
-       font-size: 2.5em;
-   }
-
-  
-}
 
 
-@media screen and (min-width:1500px){
+@media (orientation:portrait){
     .container{
-        height: 1500px;
-        width: 100%;
-        
-    }
- 
-    .menu-bar h2{
-        font-size: 2.5em;
-    }
- 
-   
- }
-
- 
-@media screen and (min-width:1200px){
-   .container{
-       height: 1200px;
-       width: 100%;
-       
-   }
-
-   .menu-bar h2{
-       font-size: 1.77em;
-   }
-
-  
-}
-
-@media screen and (min-width:992px){
-    .container{
-        height: 900px;
-        width: 100%;
-        
-    }
- 
-    .menu-bar h2{
-        font-size: 1.57em;
-    }
- 
-   
- }
-
- @media screen and (min-width:768px){
-    .container{
-        height: 700px;
-        width: 100%;
-        
-    }
- 
-    .menu-bar h2{
-        font-size: 1.47em;
-    }
-
-    .timer__block{
-        font-size: 7em;
-    
-    }
-
-    .withoutH{
-                min-width: 35%;
-                font-size: 8.7em;
-            }
- 
-   
- }
-
- @media screen and (max-width: 767px){
-    .container{
-        height: 800px;
-        width: 100%;
-        
-    }
-    .menu-bar{
-        flex-wrap: wrap;
-    }
-
-    .menu-bar h2{
-        font-size: 1.27em;
-        margin: 3%;
-    }
-
-    .timer__block{
-        font-size: 4em;
-        
-    }
-
-    .timer__timer{
-        margin-left: 0%;
-    }
-
-    .x{
-        font-size: 3em;
-    }
-    
-    .withoutH{
-        min-width: 35%;
-        font-size: 5.7em;
-    }
-
-    .res__block{
-        width: 100%;
-        
-        
-    }
-
-    .res{
-        width: 100%;
-        font-size: 0.72em;
-       
-        
-    }
-   
- }
-
- @media screen and (max-width: 500px){
-    .container{
-        height: 800px;
+        height: 100vh;
         width: 100%;
         justify-content: center;
        
@@ -297,5 +169,155 @@ body{
         
     }
    
- }
+}
+
+
+@media (max-width:992px) and (orientation:landscape){ 
+    .menu-bar h2{
+                font-size: 1.57em;
+            }
+                .timer__block{
+            font-size: 7em;
+    
+             }
+
+    .withoutH{
+                min-width: 35%;
+                font-size: 8.7em;
+            }
+
+}
+
+// @media (max-width:720px){
+
+// }
+// @media screen and (min-width:1500px){
+//    .container{
+//        height: 1400px;
+//        width: 100%;
+       
+//    }
+
+//    .menu-bar h2{
+//        font-size: 2.5em;
+//    }
+
+  
+// }
+
+
+// @media screen and (min-width:1500px){
+//     .container{
+//         height: 1500px;
+//         width: 100%;
+        
+//     }
+ 
+//     .menu-bar h2{
+//         font-size: 2.5em;
+//     }
+ 
+   
+//  }
+
+ 
+// @media screen and (min-width:1200px){
+//    .container{
+//        height: 1200px;
+//        width: 100%;
+       
+//    }
+
+//    .menu-bar h2{
+//        font-size: 1.77em;
+//    }
+
+  
+// }
+
+// @media screen and (min-width:992px){
+//     .container{
+//         height: 900px;
+//         width: 100%;
+        
+//     }
+ 
+//     .menu-bar h2{
+//         font-size: 1.57em;
+//     }
+ 
+   
+//  }
+
+//  @media screen and (min-width:768px){
+//     .container{
+//         height: 700px;
+//         width: 100%;
+        
+//     }
+ 
+//     .menu-bar h2{
+//         font-size: 1.47em;
+//     }
+
+//     .timer__block{
+//         font-size: 7em;
+    
+//     }
+
+//     .withoutH{
+//                 min-width: 35%;
+//                 font-size: 8.7em;
+//             }
+ 
+   
+//  }
+
+//  @media screen and (max-width: 767px){
+//     .container{
+//         height: 800px;
+//         width: 100%;
+        
+//     }
+//     .menu-bar{
+//         flex-wrap: wrap;
+//     }
+
+//     .menu-bar h2{
+//         font-size: 1.27em;
+//         margin: 3%;
+//     }
+
+//     .timer__block{
+//         font-size: 4em;
+        
+//     }
+
+//     .timer__timer{
+//         margin-left: 0%;
+//     }
+
+//     .x{
+//         font-size: 3em;
+//     }
+    
+//     .withoutH{
+//         min-width: 35%;
+//         font-size: 5.7em;
+//     }
+
+//     .res__block{
+//         width: 100%;
+        
+        
+//     }
+
+//     .res{
+//         width: 100%;
+//         font-size: 0.72em;
+       
+        
+//     }
+   
+//  }
 
