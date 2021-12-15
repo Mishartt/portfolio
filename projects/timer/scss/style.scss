@@ -1,0 +1,301 @@
+@import url(https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:300,regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=M+PLUS+1p:100,300,regular,500,700,800,900);
+
+body{
+  margin: 0;
+}
+
+
+.container{
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(rgb(37, 37, 37),rgb(29,29,29));
+    display: flex;
+    flex-direction: row-reverse;
+  
+}
+
+.timer{
+    position: relative;
+    width: 80%;
+   height: 70%;
+//    border: solid lime 3px;
+   margin-right: 4%;
+   display: flex;
+   flex-direction: column;
+
+   .menu-bar{
+       width: 90%;
+       display: flex;
+       flex-direction: row;
+       height: 20%;
+       position: relative;
+    //    border: solid red 3px;
+       margin-left: 5%;
+       justify-content: space-around;
+        font-family: 'M PLUS 1p';
+        font-size: large;
+        color: #838383 ;
+        h2{
+            font-weight: 300;     
+            transition: 0.4s;
+
+        }
+
+        h2:hover{
+            transition: 0.3s;
+            color: white;
+            font-size: 1.55em;
+        }
+   }
+}
+
+.timer__timer{
+    color: #c9c9c9;
+    display: flex;
+    // border: solid aquamarine 3px;
+    width: 90%;
+    height: 50%;
+    margin-left: 5%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.timer__block{
+    min-width: 24%;
+    min-height: 20%;
+    // border: solid 3px springgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9em;
+    font-family: 'Comfortaa';
+}
+
+.res__block{
+    // border: steelblue 3px solid;
+    width: 90%;
+    height: 20%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .res{
+        width: 23%;
+        height: 25%;
+        // border: lime 3px solid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'M PLUS 1p';
+        color:#c9c9c9;;
+    }
+}
+
+.x{
+    font-size: 7em;
+    margin-bottom: 2.5%;
+    font-family: 'Comfortaa';
+}
+
+.withoutH{
+    min-width: 35%;
+    font-size: 12em;
+}
+
+
+@media screen and (min-width:1500px){
+   .container{
+       height: 1400px;
+       width: 100%;
+       
+   }
+
+   .menu-bar h2{
+       font-size: 2.5em;
+   }
+
+  
+}
+
+
+@media screen and (min-width:1500px){
+    .container{
+        height: 1500px;
+        width: 100%;
+        
+    }
+ 
+    .menu-bar h2{
+        font-size: 2.5em;
+    }
+ 
+   
+ }
+
+ 
+@media screen and (min-width:1200px){
+   .container{
+       height: 1200px;
+       width: 100%;
+       
+   }
+
+   .menu-bar h2{
+       font-size: 1.77em;
+   }
+
+  
+}
+
+@media screen and (min-width:992px){
+    .container{
+        height: 900px;
+        width: 100%;
+        
+    }
+ 
+    .menu-bar h2{
+        font-size: 1.57em;
+    }
+ 
+   
+ }
+
+ @media screen and (min-width:768px){
+    .container{
+        height: 700px;
+        width: 100%;
+        
+    }
+ 
+    .menu-bar h2{
+        font-size: 1.47em;
+    }
+
+    .timer__block{
+        font-size: 7em;
+    
+    }
+
+    .withoutH{
+                min-width: 35%;
+                font-size: 8.7em;
+            }
+ 
+   
+ }
+
+ @media screen and (max-width: 767px){
+    .container{
+        height: 800px;
+        width: 100%;
+        
+    }
+    .menu-bar{
+        flex-wrap: wrap;
+    }
+
+    .menu-bar h2{
+        font-size: 1.27em;
+        margin: 3%;
+    }
+
+    .timer__block{
+        font-size: 4em;
+        
+    }
+
+    .timer__timer{
+        margin-left: 0%;
+    }
+
+    .x{
+        font-size: 3em;
+    }
+    
+    .withoutH{
+        min-width: 35%;
+        font-size: 5.7em;
+    }
+
+    .res__block{
+        width: 100%;
+        
+        
+    }
+
+    .res{
+        width: 100%;
+        font-size: 0.72em;
+       
+        
+    }
+   
+ }
+
+ @media screen and (max-width: 500px){
+    .container{
+        height: 800px;
+        width: 100%;
+        justify-content: center;
+       
+        
+    }
+
+    
+    .timer{
+        flex-direction: column-reverse;
+    }
+
+    
+    .timer__timer{
+        position: relative;
+        left: 7%;
+    }
+    
+    .menu-bar{
+        flex-wrap: wrap;
+    }
+
+    .menu-bar h2{
+        font-size: 1.27em;
+        margin: 3%;
+    }
+
+    .timer__block{
+        font-size: 3.2em;
+        
+    }
+
+    .timer__timer{
+        margin-left: 0%;
+    }
+    
+
+    .x{
+        font-size: 3em;
+    }
+    
+    .withoutH{
+        min-width: 35%;
+        font-size: 4.7em;
+    }
+
+    .res__block{
+        width: 100%;
+        
+        
+    }
+
+    .res{
+        width: 100%;
+        font-size: 0.527em;
+       
+        
+    }
+   
+ }
+

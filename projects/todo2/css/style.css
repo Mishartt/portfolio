@@ -1,0 +1,210 @@
+@import url(https://fonts.googleapis.com/css?family=M+PLUS+1:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower:regular);
+@import url(https://fonts.googleapis.com/css?family=Architects+Daughter:regular);
+.checkbox {
+  display: none;
+}
+
+body {
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body h1 {
+  font-family: 'M PLUS 1';
+  color: #d6c2c7;
+  font-size: 4em;
+  font-weight: 300;
+}
+
+.container {
+  margin-top: -3%;
+  width: 55%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .td__wrapper {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  height: 60px;
+  -webkit-box-shadow: 0px 2px 7px;
+          box-shadow: 0px 2px 7px;
+}
+
+.container .td__wrapper .all__tasks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 12%;
+  font-size: 0em;
+}
+
+.container .td__wrapper input {
+  width: 100%;
+  background-color: white;
+  border: white;
+  font-family: 'Architects Daughter';
+  font-size: 1.3em;
+  outline: none;
+}
+
+.container .td__wrapper .add__wrapper {
+  font-size: large;
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  font-size: x-large;
+}
+
+.container .s {
+  font-size: 1.3em;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+
+.container .s:hover {
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+  font-size: 1.5em;
+}
+
+.container .my__tasks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+}
+
+.container .my__tasks .todo__item.checked {
+  text-decoration: line-through;
+  color: lightgray;
+}
+
+.container .my__tasks .todo__item:hover .del {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: x-large;
+}
+
+.container .my__tasks .todo__item {
+  font-family: 'Architects Daughter';
+  font-size: small;
+  padding-left: 5%;
+  width: 95%;
+  min-height: 50px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 3px 10px -1px black;
+          box-shadow: 0px 3px 10px -1px black;
+  z-index: 10;
+}
+
+.container .my__tasks .todo__item h3 {
+  font-size: 1.3em;
+}
+
+.container .my__tasks .todo__item .description {
+  width: 90%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  right: 0px;
+  font-size: 1em;
+}
+
+.container .my__tasks .todo__item .del {
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  font-size: 0px;
+  background-color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+  }
+  .xxx {
+    text-decoration: none;
+    font-size: large;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .xxx {
+    text-decoration: none;
+    font-size: large;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+}
