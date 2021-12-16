@@ -42,7 +42,7 @@ header {
   z-index: 10;
 }
 header .container {
-  width: 1400px;
+  max-width: 1400px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,7 +60,7 @@ header .container .logo {
           align-items: center;
 }
 header .container .logo img {
-  height: 80%;
+  height: 77%;
   cursor: pointer;
 }
 header .container .menu {
@@ -69,6 +69,9 @@ header .container .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 header .container .menu .header__list {
   width: 80%;
@@ -118,8 +121,8 @@ header .container .menu .header__list .x {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1400px;
-  height: 730px;
+  max-width: 1400px;
+  max-height: 730px;
 }
 .home .hero-wrapper .inf {
   width: 50%;
@@ -235,7 +238,7 @@ main .about__me .inform__about__me {
 }
 main .skills {
   width: 100%;
-  height: 35vh;
+  min-height: 35vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,7 +251,7 @@ main .skills {
           flex-direction: column;
 }
 main .skills .skills__wrapper {
-  width: 1200px;
+  max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,8 +266,8 @@ main .skills .skills__wrapper .skill {
   -webkit-box-shadow: 0 1.6rem 2.4rem rgba(0, 0, 0, 0.25);
           box-shadow: 0 1.6rem 2.4rem rgba(0, 0, 0, 0.25);
   margin: 21px;
-  width: 300px;
-  height: 52px;
+  max-width: 300px;
+  max-height: 52px;
   border: #64ffda solid 1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -296,15 +299,15 @@ main .portfolio {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 80vh;
+  min-height: 80vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 main .portfolio .works__wrapper {
-  width: 1400px;
-  min-height: 87%;
+  max-width: 1400px;
+  min-height: 77vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,16 +388,16 @@ main .Contact__me {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 50vh;
+  min-height: 50vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 5%;
+  margin-bottom: 7vh;
 }
 main .Contact__me .contact__wrapper {
-  width: 1400px;
-  height: 70vh;
+  max-width: 1400px;
+  min-height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,7 +410,7 @@ main .Contact__me .contact__wrapper {
 }
 main .Contact__me .contact__wrapper .contacts {
   margin-top: -10%;
-  width: 35%;
+  width: 40%;
   height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -425,8 +428,8 @@ main .Contact__me .contact__wrapper .contacts p {
   color: whitesmoke;
 }
 main .Contact__me .contact__wrapper .contacts .icon {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background-color: #0fb;
   border-radius: 50%;
   display: -webkit-box;
@@ -477,7 +480,7 @@ main .Contact__me .contact__wrapper .contacts .phone p {
   font-size: 1em;
 }
 main .Contact__me .contact__wrapper .Contact__form {
-  width: 65%;
+  width: 60%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -595,7 +598,7 @@ main .Contact__me .contact__wrapper .sbm__btn:hover {
 
 footer {
   width: 100%;
-  height: 170px;
+  max-height: 170px;
   background-color: #212121;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -610,43 +613,38 @@ footer {
 
 @media (max-width: 1500px) {
   .container {
-    width: 85%;
-  }
-
-  .hero-wrapper {
-    width: 85%;
-  }
-
-  .works__wrapper {
-    width: 85%;
-  }
-
-  .contact__wrapper {
-    width: 85%;
-  }
-
-  .skills__wrapper {
-    width: 85%;
-  }
-}
-@media (max-width: 992px) {
-  .hero-wrapper {
     width: 80%;
   }
 
-  .container {
-    width: 500px;
-  }
-
   .hero-wrapper {
-    width: 970px;
+    margin-top: 15vh;
+    width: 85%;
   }
 
   .works__wrapper {
-    width: 970px;
+    width: 85%;
+    margin: 20vh;
+  }
+  .contact__wrapper {
+    margin-top: 7vh;
+    width: 950px;
   }
 
-  .contact__wrapper {
-    width: 970px;
+  .skills {
+    margin-top: 17vh;
+  }
+
+  footer {
+    height: 130px;
+  }
+
+  .skills__wrapper {
+    width: 900px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  .skills__wrapper .skill {
+    width: 200px;
+    height: 41px;
   }
 }

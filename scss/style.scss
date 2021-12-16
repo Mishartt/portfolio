@@ -37,7 +37,7 @@ header{
 
    .container{
       
-       width: 1400px;
+       max-width: 1400px;
        height: 100%;
     //    background-color: teal;
        display: flex;
@@ -51,7 +51,7 @@ header{
             display: flex;
             align-items: center;
             img{
-                height: 80%;
+                height: 77%;
                 cursor: pointer;
             }
         }
@@ -60,6 +60,7 @@ header{
             width: 70%;
             height: 100%;
             display: flex;
+            justify-content: right;
 
             .header__list{
               
@@ -101,8 +102,8 @@ header{
         // border: teal solid;
         justify-content: center;
         align-items: center;
-        width: 1400px;
-        height: 730px;
+        max-width: 1400px;
+        max-height: 730px;
 
         .inf{
             width: 50%;
@@ -214,14 +215,14 @@ main{
 
     .skills{
         width: 100%;
-        height: 35vh;
+        min-height: 35vh;
         display: flex;
         align-items: center;
         flex-direction: column;
         
         
             .skills__wrapper{
-                width: 1200px;
+                max-width: 1200px;
                 display: flex;
                 justify-content: space-around;
                 padding-top: 20px;
@@ -233,8 +234,8 @@ main{
                     box-shadow: 0 1.6rem 2.4rem rgb(0 0 0 / 25%);
                     // background-color: #2b2b2b;;
                     margin: 21px;
-                    width: 300px;
-                    height: 52px;
+                    max-width: 300px;
+                   max-height: 52px;
                     border: #64ffda solid 1px;
                     display: flex;
                     justify-content: center;
@@ -263,15 +264,15 @@ main{
         display: flex;
         align-items: center;
         width: 100%;
-        height: 80vh;
+        min-height: 80vh;
         flex-direction: column;
 
         
 
 
         .works__wrapper{
-            width: 1400px;
-            min-height: 87%;
+            max-width: 1400px;
+            min-height: 77vh;
             // border: solid teal;
             display: flex;
             justify-content: space-around;
@@ -346,14 +347,16 @@ main{
         display: flex;
         align-items: center;
         width: 100%;
-        height: 50vh;
+        min-height: 50vh;
         flex-direction: column;
-        margin-bottom: 5%;
+        margin-bottom: 7vh;
+
+      
 
 
         .contact__wrapper{
-            width: 1400px;
-            height: 70vh;
+            max-width: 1400px;
+            min-height: 70vh;
             // border: solid springgreen;
             display: flex;
             justify-content: center;
@@ -361,7 +364,7 @@ main{
 
             .contacts{
                 margin-top: -10%;
-                width: 35%;
+                width: 40%;
                 height: 50%;
                 // border: solid tomato;
                 display: flex;
@@ -375,8 +378,8 @@ main{
                 }
 
                 .icon{
-                    width: 60px;
-                    height: 60px;
+                    width: 50px;
+                    height: 50px;
                     background-color: #0fb;
                     border-radius: 50%;
                     display: flex;
@@ -412,7 +415,7 @@ main{
             }
 
             .Contact__form{
-                width: 65%;
+                width: 60%;
                 height: 100%;
                 // border: slateblue solid;
                 display: flex;
@@ -516,7 +519,7 @@ main{
 
 footer{
     width: 100%;
-    height: 170px;
+    max-height: 170px;
     background-color: #212121;
     display: flex;
     align-items: center;
@@ -530,23 +533,53 @@ footer{
 @media (max-width:1500px){
 
     .container{
-        width: 85%;
+        width: 80%;
+        
     }
 
+    
+   
+
     .hero-wrapper{
+        margin-top: 15vh;
         width: 85%;
     }
 
     .works__wrapper{
         width: 85%;
+        margin: 20vh;
+
+        .item1{
+
+        }
     }
 
     .contact__wrapper{
-        width: 85%;
+        margin-top: 7vh;
+        width: 950px;
+    }
+
+    .skills{
+        margin-top: 17vh;
+    }
+
+    footer{
+        height: 130px;
     }
 
     .skills__wrapper{
-        width: 85%;
+       width: 900px;
+       margin-top: 5vh;
+       margin-bottom: 5vh;
+
+
+       .skill{
+        // margin: 21px;
+        width: 200px;
+        height: 41px;
+        
+        // height: 52px;
+       }
     }
 
     // .item1{
@@ -557,27 +590,27 @@ footer{
 
 }
 
-@media (max-width:992px){
+// @media (max-width:992px){
 
-    .hero-wrapper{
-        width: 80%;
-    }
+//     .hero-wrapper{
+//         width: 80%;
+//     }
     
-    .container{
-        width: 500px;
-    }
+//     .container{
+//         width: 500px;
+//     }
 
-    .hero-wrapper{
-        width: 970px;
-    }
+//     .hero-wrapper{
+//         width: 970px;
+//     }
 
-    .works__wrapper{
-        width: 970px;
-    }
+//     .works__wrapper{
+//         width: 970px;
+//     }
 
-    .contact__wrapper{
-        width: 970px;
-    }
+//     .contact__wrapper{
+//         width: 970px;
+//     }
 
 
-}
+// }
