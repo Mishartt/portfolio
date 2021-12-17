@@ -25,6 +25,8 @@ body {
 }
 
 
+
+
 header{
    position: fixed;
    width: 100%;
@@ -124,6 +126,16 @@ header{
                 font-weight: 700;
                 font-size: 3.5em;
                 margin-bottom: 7px;
+
+                transform: translate(0px,120%);
+                opacity: 0;
+                transition: 0.7s;
+            }
+            
+            .active{
+                transform: translate(0,0);
+                opacity: 1;
+                transition: 0.7s;
             }
 
             h3{

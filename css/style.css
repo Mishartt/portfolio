@@ -148,6 +148,18 @@ header .container .menu .header__list .x {
   font-weight: 700;
   font-size: 3.5em;
   margin-bottom: 7px;
+  -webkit-transform: translate(0px, 120%);
+          transform: translate(0px, 120%);
+  opacity: 0;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+.home .hero-wrapper .inf .active {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 .home .hero-wrapper .inf h3 {
   font-size: 1.9em;
