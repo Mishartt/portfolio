@@ -144,6 +144,13 @@ header .container .menu .header__list .x {
   font-size: 1.2em;
   margin-bottom: 7px;
 }
+.home .hero-wrapper .inf .anim-items {
+  -webkit-transform: translate(0px, 120%);
+          transform: translate(0px, 120%);
+  opacity: 0;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
 .home .hero-wrapper .inf h1 {
   font-weight: 700;
   font-size: 3.5em;
@@ -154,17 +161,15 @@ header .container .menu .header__list .x {
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
-.home .hero-wrapper .inf .active {
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-  opacity: 1;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-}
 .home .hero-wrapper .inf h3 {
   font-size: 1.9em;
   color: #0fb;
   margin-bottom: 7px;
+  -webkit-transform: translate(0px, 120%);
+          transform: translate(0px, 120%);
+  opacity: 0;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 .home .hero-wrapper .inf .hire__me {
   -webkit-transition: 0.3s;
@@ -194,6 +199,13 @@ header .container .menu .header__list .x {
 .home .hero-wrapper .inf .hire__me a {
   color: black;
 }
+.home .hero-wrapper .inf .active {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
 .home .hero-wrapper .inf .hire__me:hover {
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -205,6 +217,52 @@ header .container .menu .header__list .x {
 .home .hero-wrapper .pht img {
   margin: 0 auto;
   width: 90%;
+}
+.home .hero-wrapper .pht .im {
+  -webkit-transform: translate(30%, 0px);
+          transform: translate(30%, 0px);
+  opacity: 0;
+}
+.home .hero-wrapper .pht .active {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.active {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.dw__cv {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-top: 35px;
+  width: 187px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0fb;
+  border-radius: 3em;
+  color: black;
+  font-size: 0.77em;
+  padding-top: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-box-shadow: 0 0.6rem 1.4rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0.6rem 1.4rem rgba(0, 0, 0, 0.25);
 }
 
 main {
@@ -250,6 +308,9 @@ main .about__me .inform__about__me {
           flex-direction: column;
   color: white;
   font-size: 1.4em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 main .skills {
   width: 100%;
@@ -298,6 +359,12 @@ main .skills .skills__wrapper .skill {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   font-size: 1.5em;
+  opacity: 0;
+}
+main .skills .skills__wrapper .active {
+  opacity: 1;
+  -webkit-transform: 0.7s;
+          transform: 0.7s;
 }
 main .skills .skills__wrapper .skill:hover {
   background-color: #0fb;
@@ -339,6 +406,16 @@ main .portfolio .works__wrapper .item1 {
   overflow: hidden;
   -webkit-box-shadow: 0 1.6rem 2.4rem rgba(0, 0, 0, 0.25);
           box-shadow: 0 1.6rem 2.4rem rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  -webkit-transform: translate(120%, 0);
+          transform: translate(120%, 0);
+}
+main .portfolio .works__wrapper .active {
+  opacity: 1;
+  -webkit-transform: 0.7s;
+          transform: 0.7s;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 main .portfolio .works__wrapper .description {
   width: 100%;

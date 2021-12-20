@@ -89,6 +89,7 @@ header{
 }
 
 
+
 .home{
     margin-top: 5vh;
     width: 100%;
@@ -120,6 +121,13 @@ header{
             p{
                 font-size: 1.2em;
                 margin-bottom: 7px;
+
+                
+            }
+            .anim-items{
+                transform: translate(0px,120%);
+                opacity: 0;
+                transition: 0.7s;
             }
 
             h1{
@@ -132,16 +140,16 @@ header{
                 transition: 0.7s;
             }
             
-            .active{
-                transform: translate(0,0);
-                opacity: 1;
-                transition: 0.7s;
-            }
+           
 
             h3{
                 font-size: 1.9em;
                 color: #0fb;
                 margin-bottom: 7px;
+
+                transform: translate(0px,120%);
+                opacity: 0;
+                transition: 0.7s;
             }
 
             .hire__me{
@@ -166,6 +174,11 @@ header{
                 box-shadow: 0 0.6rem 1.4rem rgb(0 0 0 / 25%);
 
             }
+            .active{
+                transform: translate(0,0);
+                opacity: 1;
+                transition: 0.7s;
+            }
 
             .hire__me:hover{
                 
@@ -173,6 +186,8 @@ header{
                 background-color: rgba(0, 255, 187, 0.719);
             }
         }
+
+         
 
         .pht{
             width: 50%;
@@ -182,8 +197,43 @@ header{
                 margin: 0 auto;
                 width: 90%;
             }
+
+            .im{
+                transform: translate(30%,0px);
+                opacity: 0;
+            }
+            .active{
+                transform: translate(0,0);
+                opacity: 1;
+                transition: 0.7s;
+            }
         }
     }
+}
+
+
+            .active{
+                transform: translate(0,0);
+                opacity: 1;
+                transition: 0.7s;
+            }
+
+.dw__cv{
+    transition: 0.3s;
+    margin-top: 35px;
+    width: 187px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0fb;
+    border-radius: 3em;
+    color: black;
+    font-size: 0.77em;
+    padding-top: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0.6rem 1.4rem rgb(0 0 0 / 25%);
 }
 
 main{
@@ -225,6 +275,7 @@ main{
             flex-direction: column;
             color: white;
             font-size: 1.4em;
+            align-items: center;
         }
     }
 
@@ -259,12 +310,19 @@ main{
                     color: #64ffda;
                     transition: 0.3s;
                     font-size: 1.5em;
+                    opacity: 0;
+                }
+
+                .active{
+                    opacity: 1;
+                    transform: 0.7s;
                 }
 
                 .skill:hover{
                     background-color: #0fb;
                     color: black;
                     transition: 0.3s;
+                    
                 }
             }
         
@@ -301,6 +359,15 @@ main{
                 max-height: 300px;
                 overflow: hidden;
                 box-shadow: 0 1.6rem 2.4rem rgb(0 0 0 / 25%);
+              
+                opacity: 0;
+                transform: translate(120%,0);
+            }
+
+            .active{
+                opacity: 1;
+                transform: 0.7s;
+                transform: translate(0,0);
             }
 
             .description{
@@ -326,6 +393,7 @@ main{
     #i1{
         background-image: url(/assets/img/pr/Screenshot_3.png);
         background-size: 105%;
+        
     }
     #i2{
         background-image: url(/assets/img/pr/timer.png);

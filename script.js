@@ -22,34 +22,47 @@ item[2].addEventListener('click',()=>{
 const animItems = document.querySelectorAll('.anim-items');
 console.log(animItems.length);
 if(animItems.length>0){
+    
     window.addEventListener('scroll',animScroll)
     function animScroll(){
         for(let i = 0;i<animItems.length;i++){
             const animItem = animItems[i];
-            const animItemHiegh = animItem.offsetHieght;
+            console.log(animItem);
+            const animItemHeight = animItem.offsetHeight;
             const animItemOffset = offset(animItem).top;
             const animStart = 4;
 
-            let animItemPoint = window.innerHeight - animItemHiegh / animStart
-        }
-
-        if(animItemHiegh > window.innerHeight){
+            
+            let animItemPoint = window.innerHeight - animItemHeight / animStart;
+        if(animItemHeight > window.innerHeight){
             animItemPoint = window.innerHeight - window.innerHeight / animStart
         }
 
-        if((pageYOffset > animItemOffset - animItemPoint)&& pageYOffset < (animItemOffset- animItemHiegh)){
+        if((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)){
             animItem.classList.add('active');
+            console.log('+');
         }else{
             animItem.classList.remove('active');
+            console.log('-');
+
         }
-    }
+       
+      }
+    }   
 
     function offset (el){
         const rect = el.getBoundingClientRect(),
-        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+        scrollLeft = window.pageXOffset  ||  document.documentElement.scrollLeft,
         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-        return{top:rect.top+scrollTop,left: rect.left +screenLeft}
+        return{top:rect.top+scrollTop,left: rect.left + scrollLeft}
     }
+
+    
+    setTimeout(()=>{
+        animScroll()
+    },300)
+    
+    
 }
 
