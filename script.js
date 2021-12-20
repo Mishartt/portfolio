@@ -20,14 +20,12 @@ item[2].addEventListener('click',()=>{
 
 
 const animItems = document.querySelectorAll('.anim-items');
-console.log(animItems.length);
 if(animItems.length>0){
     
     window.addEventListener('scroll',animScroll)
     function animScroll(){
         for(let i = 0;i<animItems.length;i++){
             const animItem = animItems[i];
-            console.log(animItem);
             const animItemHeight = animItem.offsetHeight;
             const animItemOffset = offset(animItem).top;
             const animStart = 4;
@@ -40,10 +38,10 @@ if(animItems.length>0){
 
         if((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)){
             animItem.classList.add('active');
-            console.log('+');
+            // console.log('+');
         }else{
             animItem.classList.remove('active');
-            console.log('-');
+            // console.log('-');
 
         }
        
@@ -65,4 +63,51 @@ if(animItems.length>0){
     
     
 }
+
+
+////////////////////////ALERT/////////////////////
+document.querySelector('.dw__cv').addEventListener('click',()=>{
+    alert('will be soon')
+})
+
+/////////////MENU/////////////////////////////////
+const menuItems = document.querySelectorAll('.header__link');
+const observer = new IntersectionObserver((ent)=>{
+    ent.forEach((en)=>{
+        if(en.isIntersecting){
+            console.log('xxx',en.target.id);
+            menuItems.forEach((item)=>{
+                item.style.color = 'white';
+            })
+            switch(en.target.id){
+                case 'home':
+                console.log('ok');
+                menuItems[0].style.color = '#0ff'
+                break;
+                case 'About':
+                    menuItems[1].style.color = '#0ff'
+                break;
+                case 'skills':
+                    menuItems[1].style.color = '#0ff'
+                break;
+                case 'Potfolio':
+                    menuItems[2].style.color = '#0ff'
+                break;
+                case 'Contact':
+                    menuItems[3].style.color = '#0ff'
+                break;
+               
+            }
+        }
+    })
+})
+
+
+document.querySelectorAll('.section').forEach(
+    (section) => observer.observe(section),
+);
+
+
+
+
 

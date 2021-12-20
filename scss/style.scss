@@ -263,9 +263,17 @@ main{
     .about__me{
         .title{
             margin-bottom: 3vh;
+            transform: translate(0,120%);
+            opacity: 0;
         }
         max-width: 100%;
         min-height: 40vh;
+
+         .active{
+            transition: 0.5s;
+            transform: translate(0,0);
+            opacity: 1;
+            }
 
 
         .inform__about__me{
@@ -276,7 +284,31 @@ main{
             color: white;
             font-size: 1.4em;
             align-items: center;
+            p{
+                transform: translate(0,120%);
+                opacity: 0;
+            }
+            h2{
+                transform: translate(0,120%);
+                opacity: 0;
+            }
+
+            .dw__cv{
+                transform: translate(0,120%);
+                opacity: 0;
+            }
+           
+           .active{
+            transition: 0.5s;
+            transform: translate(0,0);
+            opacity: 1;
+            }
+
+            
+            
+           
         }
+        
     }
 
     .skills{
@@ -310,10 +342,14 @@ main{
                     color: #64ffda;
                     transition: 0.3s;
                     font-size: 1.5em;
+
+                    transform: translate(0,77%);
                     opacity: 0;
                 }
+                
 
                 .active{
+                    transform: translate(0,0);
                     opacity: 1;
                     transform: 0.7s;
                 }
@@ -361,7 +397,7 @@ main{
                 box-shadow: 0 1.6rem 2.4rem rgb(0 0 0 / 25%);
               
                 opacity: 0;
-                transform: translate(120%,0);
+                transform: translate(-120%,0);
             }
 
             .active{
@@ -507,7 +543,7 @@ main{
                 align-items: center;
 
                 form{
-                    width: 90%;
+                    width: 100%;
                     display: flex;
                     align-items: center;
                     flex-direction: column;
@@ -530,7 +566,7 @@ main{
                     justify-content: center;
                    .mail{
                        border-radius: 30px;
-                       width: 38%;
+                       min-width: 38%;
                        height: 50px;
                        background-color: #262626;
                        border: 1px solid #fcfcfc;
@@ -543,7 +579,7 @@ main{
                    
                    .number{
                     border-radius: 30px;
-                    width: 38%;
+                    min-width: 38%;
                     height: 50px;
                     background-color: #262626;
                     border: 1px solid #fcfcfc;
@@ -835,6 +871,29 @@ footer{
         }
     }
 
+    
+    .x{
+        flex-direction: column;
+        color: #0ff;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+
+        .mail{
+            width: 80%;
+            height: 50px;
+            margin-left: 4%;
+            margin-bottom: 14px;
+        }
+
+        .number{
+            width: 80%;
+            height: 50px;
+            margin: 0;
+            
+        }
+    }
+
    
     
 
@@ -936,6 +995,7 @@ footer{
     // .item1{
     //     width: 85%;
     // }
+
    
 
 }

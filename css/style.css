@@ -295,6 +295,16 @@ main .about__me {
 }
 main .about__me .title {
   margin-bottom: 3vh;
+  -webkit-transform: translate(0, 120%);
+          transform: translate(0, 120%);
+  opacity: 0;
+}
+main .about__me .active {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
 }
 main .about__me .inform__about__me {
   max-width: 100%;
@@ -311,6 +321,28 @@ main .about__me .inform__about__me {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+main .about__me .inform__about__me p {
+  -webkit-transform: translate(0, 120%);
+          transform: translate(0, 120%);
+  opacity: 0;
+}
+main .about__me .inform__about__me h2 {
+  -webkit-transform: translate(0, 120%);
+          transform: translate(0, 120%);
+  opacity: 0;
+}
+main .about__me .inform__about__me .dw__cv {
+  -webkit-transform: translate(0, 120%);
+          transform: translate(0, 120%);
+  opacity: 0;
+}
+main .about__me .inform__about__me .active {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
 }
 main .skills {
   width: 100%;
@@ -359,9 +391,13 @@ main .skills .skills__wrapper .skill {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   font-size: 1.5em;
+  -webkit-transform: translate(0, 77%);
+          transform: translate(0, 77%);
   opacity: 0;
 }
 main .skills .skills__wrapper .active {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
   opacity: 1;
   -webkit-transform: 0.7s;
           transform: 0.7s;
@@ -407,8 +443,8 @@ main .portfolio .works__wrapper .item1 {
   -webkit-box-shadow: 0 1.6rem 2.4rem rgba(0, 0, 0, 0.25);
           box-shadow: 0 1.6rem 2.4rem rgba(0, 0, 0, 0.25);
   opacity: 0;
-  -webkit-transform: translate(120%, 0);
-          transform: translate(120%, 0);
+  -webkit-transform: translate(-120%, 0);
+          transform: translate(-120%, 0);
 }
 main .portfolio .works__wrapper .active {
   opacity: 1;
@@ -589,7 +625,7 @@ main .Contact__me .contact__wrapper .Contact__form {
           align-items: center;
 }
 main .Contact__me .contact__wrapper .Contact__form form {
-  width: 90%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -623,7 +659,7 @@ main .Contact__me .contact__wrapper .Contact__form .x {
 }
 main .Contact__me .contact__wrapper .Contact__form .x .mail {
   border-radius: 30px;
-  width: 38%;
+  min-width: 38%;
   height: 50px;
   background-color: #262626;
   border: 1px solid #fcfcfc;
@@ -634,7 +670,7 @@ main .Contact__me .contact__wrapper .Contact__form .x .mail {
 }
 main .Contact__me .contact__wrapper .Contact__form .x .number {
   border-radius: 30px;
-  width: 38%;
+  min-width: 38%;
   height: 50px;
   background-color: #262626;
   border: 1px solid #fcfcfc;
@@ -862,6 +898,32 @@ footer {
   }
   .container .logo img {
     display: none;
+  }
+
+  .x {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: #0ff;
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .x .mail {
+    width: 80%;
+    height: 50px;
+    margin-left: 4%;
+    margin-bottom: 14px;
+  }
+  .x .number {
+    width: 80%;
+    height: 50px;
+    margin: 0;
   }
 
   .works__wrapper {
